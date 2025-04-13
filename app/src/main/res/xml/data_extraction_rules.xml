@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include
+            domain="database"
+            path="Worklock_common.DB3*" />
+        <include
+            domain="sharedpref"
+            path="settings" />
+    </cloud-backup>
+    <device-transfer>
+        <include
+            domain="database"
+            path="Worklock_common.DB3*" />
+        <include
+            domain="sharedpref"
+            path="settings" />
+    </device-transfer>
+</data-extraction-rules>

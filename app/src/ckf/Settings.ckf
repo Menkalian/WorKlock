@@ -1,0 +1,7 @@
+Settings
+    Export
+        IncludeManualMarker
+        IncludeErrorMarker
+        IncludePause
+    App
+        AllowDangerousEdits

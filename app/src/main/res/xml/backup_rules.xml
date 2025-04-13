@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include
+        domain="database"
+        path="Worklock_common.DB3*" />
+    <include
+        domain="sharedpref"
+        path="settings" />
+</full-backup-content>

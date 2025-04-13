@@ -1,0 +1,36 @@
+@startuml
+
+:App user: as User
+
+(Track work start) as (Start)
+(Track work end) as (End)
+(Track pause) as (Pause)
+(Undo last action) as (Missclick)
+(Fix errors in data) as (Fix)
+(Backup data as file) as (Backup)
+(Store backup in google drive) as (BackupGoogle)
+(Append additional data to exports; e.g. name, personal number, etc.) as (MetaData)
+(Export monthly data as raw data) as (RawMonth)
+(Export aggregate data as raw data) as (RawAggr)
+(Export monthly data as Excel sheet) as (ExcelMonth)
+(Export multi-months data as Excel sheet) as (ExcelMulti)
+(Export aggregate data as Excel sheet) as (ExcelAggr)
+(Share exported files) as (Share)
+
+User --> (Start)
+User ---> (End)
+User --> (Pause)
+User ---> (Fix)
+User ---> (Missclick)
+User --> (Backup)
+User ---> (BackupGoogle)
+User --> (MetaData)
+User --> (RawMonth)
+User ---> (RawAggr)
+User --> (ExcelMonth)
+User ---> (ExcelMulti)
+User --> (ExcelAggr)
+User ---> (Share)
+User ---> (Share)
+
+@enduml

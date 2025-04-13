@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_label_tracking">Erfassung</string>
+    <string name="menu_label_calendar">Kalender</string>
+    <string name="menu_label_export">Export</string>
+    <string name="menu_label_settings">Einstellungen</string>
+
+    <string name="tracking_currentstate_working">Sie sind eingestochen.\nFrohes Schaffen!</string>
+    <string name="tracking_currentstate_pause">Sie nehmen sich eine wohlverdiente Pause!</string>
+    <string name="tracking_currentstate_home_before">Willkommen!\nSie haben noch nicht eingestochen.</string>
+    <string name="tracking_currentstate_home_after">Sie haben abgestochen.\nSchönen Feierabend!</string>
+
+    <string name="tracking_start">Einstechen</string>
+    <string name="tracking_end">Ausstechen</string>
+    <string name="tracking_pause">Pause beginnen</string>
+    <string name="tracking_unpause">Weiter arbeiten</string>
+    <string name="tracking_undo">Rückgängig</string>
+    <string name="tracking_current_time">Heutige Arbeitszeit:\n%02d:%02d Std.</string>
+    <string name="tracking_current_day_error">Der heutige Tag enthält einen Fehler!</string>
+
+    <string name="days_select_instruction">Bitte wählen Sie einen Tag um die Einträge für den Tag einzusehen und zu bearbeiten.</string>
+
+    <string name="correction_title_date_pattern">"dd. LLLL yyyy"</string>
+    <string name="correction_btn_back">Zurück</string>
+    <string name="correction_btn_edit">Zeit anpassen</string>
+    <string name="correction_btn_delete">Löschen</string>
+    <string name="correction_label_addpause">Pause hinz.</string>
+    <string name="correction_label_addwork">Arbeitsphase hinz.</string>
+    <string name="correction_label_showdetailed">Detailansicht</string>
+    <string name="correction_label_deleted">Gelöscht</string>
+    <string name="correction_label_manual">Bearbeitet</string>
+    <string name="correction_text_stats">Gesamtzeit: %1$02d:%2$02d Std.\n- Pausenzeit: %3$02d:%4$02d Std.\n= Arbeitszeit: %5$02d:%6$02d Std.</string>
+    <string name="correction_text_error">Der Tag enthält einen Fehler!</string>
+    <string name="correction_text_select_start">Bitte wählen Sie die Startzeit.</string>
+    <string name="correction_text_select_until">Bitte wählen Sie die Endzeit.</string>
+    <string name="correction_text_select_change">Bitte wählen Sie den geänderten Zeitpunkt.</string>
+    <string name="correction_section_entries">Einträge</string>
+    <string name="correction_entry_id">Nr. %d</string>
+    <string name="correction_entry_timestamp">Um %s</string>
+    <string name="correction_entry_type">Typ: %s</string>
+    <string name="correction_entry_type_start">Einstechen</string>
+    <string name="correction_entry_type_end">Ausstechen</string>
+    <string name="correction_entry_type_pause">Pause</string>
+    <string name="correction_entry_type_unpause">Pausenende</string>
+    <string name="correction_entry_replaced_by">Überschrieben durch Nr. %d</string>
+
+    <string name="export_title">Datenexport</string>
+    <string name="export_format">Exportformat</string>
+    <string name="export_range">Zeitspanne</string>
+    <string name="export_type">Inhalt</string>
+    <string name="export_radio_type_record">Rohdaten</string>
+    <string name="export_radio_type_aggregate">Aufbereitete Daten</string>
+    <string name="export_checkbox_range">Mehrere Monate</string>
+    <string name="export_range_month">Monat:</string>
+    <string name="export_range_start">Von:</string>
+    <string name="export_range_until">Bis:</string>
+    <string name="export_start">Export starten</string>
+    <string name="export_save">Datei speichern</string>
+    <string name="export_share">Export teilen</string>
+    <string name="export_share_failed">Teilungsvorgang ist fehlgeschlagen…</string>
+    <string name="export_finished">Der Exportvorgang war erfolgreich.\nBitte wählen Sie wie die Exportdatei genutzt werden soll.</string>
+    <string name="export_excel_sheet_additional">Zusatzinfo</string>
+    <string name="export_excel_sheet_month_record_id">ID</string>
+    <string name="export_excel_sheet_month_record_time">Zeitpunkt</string>
+    <string name="export_excel_sheet_month_record_time_unix">Zeitstempel (UNIX)</string>
+    <string name="export_excel_sheet_month_record_type">Typ</string>
+    <string name="export_excel_sheet_month_record_manual">Manuell bearbeitet</string>
+    <string name="export_excel_sheet_month_record_overwrites">Ersetzt</string>
+    <string name="export_excel_sheet_month_record_deleted">Gelöscht</string>
+    <string name="export_excel_sheet_month_aggreg_date">Datum</string>
+    <string name="export_excel_sheet_month_aggreg_error">Fehler</string>
+    <string name="export_excel_sheet_month_aggreg_total">Gesamt</string>
+    <string name="export_excel_sheet_month_aggreg_worktime">Arbeitszeit</string>
+    <string name="export_excel_sheet_month_aggreg_pausetime">Pause</string>
+    <string name="export_excel_sheet_month_aggreg_manual">Manuell bearbeitet</string>
+
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_section_export">Export</string>
+    <string name="settings_section_export_manual_edit">Manuelle Änderungen im Export angeben</string>
+    <string name="settings_section_export_errors">Fehlerhafte Tage im Export angeben</string>
+    <string name="settings_section_export_pause">Gesamt- und Pausenzeit angeben</string>
+    <string name="settings_section_app">Applikation</string>
+    <string name="settings_section_app_dangerous_edit">Ermögliche potenziell schädliche Bearbeitungen</string>
+    <string name="settings_section_personal">Persönliche Angaben</string>
+    <string name="settings_section_personal_add">Neu</string>
+    <string name="settings_section_personal_reset">Zurücksetzen</string>
+    <string name="settings_section_personal_save">Speichern</string>
+    <string name="settings_section_personal_entry_active">Aktiv:</string>
+    <string name="settings_section_personal_entry_delete">Löschen</string>
+    <string name="settings_section_personal_entry_name">Attribut</string>
+    <string name="settings_section_personal_entry_value">Wert</string>
+</resources>

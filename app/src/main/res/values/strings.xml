@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name" translatable="false">WorKlock</string>
+
+    <string name="menu_label_tracking">Tracking</string>
+    <string name="menu_label_calendar">Calendar</string>
+    <string name="menu_label_export">Export</string>
+    <string name="menu_label_settings">Settings</string>
+
+    <string name="tracking_currentstate_working">You are working!\nGood job!</string>
+    <string name="tracking_currentstate_pause">You are taking a well-deserved break.</string>
+    <string name="tracking_currentstate_home_before">Welcome!\nYou are not clocked in.</string>
+    <string name="tracking_currentstate_home_after">You have clocked off.\nHave a nice day!</string>
+
+    <string name="tracking_start">Start work</string>
+    <string name="tracking_end">End work</string>
+    <string name="tracking_pause">Take a break</string>
+    <string name="tracking_unpause">Continue work</string>
+    <string name="tracking_undo">Undo last action</string>
+    <string name="tracking_current_time">Today\'s working time:\n%02d:%02d h</string>
+    <string name="tracking_current_day_error">Today contains an error.</string>
+
+    <string name="days_select_instruction">Please select a day to view and correct the entries for that day.</string>
+
+    <string name="correction_title_date_pattern">yyyy/MM/dd</string>
+    <string name="correction_btn_back">Back</string>
+    <string name="correction_btn_edit">Edit time</string>
+    <string name="correction_btn_delete">Delete</string>
+    <string name="correction_label_addpause">Add pause</string>
+    <string name="correction_label_addwork">Add work period</string>
+    <string name="correction_label_showdetailed">Show detailed</string>
+    <string name="correction_label_deleted">Deleted</string>
+    <string name="correction_label_manual">Manually altered</string>
+    <string name="correction_text_stats">Total time: %1$02d:%2$02d h\n- Pause Time: %3$02d:%4$02d h\n= Work Time: %5$02d:%6$02d h</string>
+    <string name="correction_text_error">The day contains an error!</string>
+    <string name="correction_text_select_start">Please select the start time</string>
+    <string name="correction_text_select_until">Please select the ending time</string>
+    <string name="correction_text_select_change">Please select the new time for the entry.</string>
+    <string name="correction_section_entries">Entries</string>
+    <string name="correction_entry_id">#%d</string>
+    <string name="correction_entry_timestamp">At: %s</string>
+    <string name="correction_entry_type">Type: %s</string>
+    <string name="correction_entry_type_start">Work start</string>
+    <string name="correction_entry_type_end">Work end</string>
+    <string name="correction_entry_type_pause">Pause</string>
+    <string name="correction_entry_type_unpause">End of pause</string>
+    <string name="correction_entry_replaced_by">Replaced by #%d</string>
+
+    <string name="export_title">Export</string>
+    <string name="export_format">Export Format</string>
+    <string name="export_type">Export Content</string>
+    <string name="export_range">Timerange</string>
+    <string name="export_radio_format_excel" translatable="false">Excel</string>
+    <string name="export_radio_format_csv" translatable="false">CSV</string>
+    <string name="export_radio_type_record">Records</string>
+    <string name="export_radio_type_aggregate">Aggregated Information</string>
+    <string name="export_checkbox_range">Month-Range</string>
+    <string name="export_range_month">Month:</string>
+    <string name="export_range_start">First Month:</string>
+    <string name="export_range_until">Last Month:</string>
+    <string name="export_start">Start Export</string>
+    <string name="export_save">Save as file</string>
+    <string name="export_share">Share Export</string>
+    <string name="export_share_failed">Sharing failed…</string>
+    <string name="export_finished">The export was successful.\nPlease choose the action for your export.</string>
+    <string name="export_excel_sheet_additional">Additional information</string>
+    <string name="export_excel_sheet_month_record_id">ID</string>
+    <string name="export_excel_sheet_month_record_time">Time</string>
+    <string name="export_excel_sheet_month_record_time_unix">Timestamp (UNIX)</string>
+    <string name="export_excel_sheet_month_record_type">Type</string>
+    <string name="export_excel_sheet_month_record_manual">Manual</string>
+    <string name="export_excel_sheet_month_record_overwrites">Overwrites ID</string>
+    <string name="export_excel_sheet_month_record_deleted">Deleted</string>
+    <string name="export_excel_sheet_month_aggreg_date">Date</string>
+    <string name="export_excel_sheet_month_aggreg_error">Error</string>
+    <string name="export_excel_sheet_month_aggreg_total">Total</string>
+    <string name="export_excel_sheet_month_aggreg_worktime">Worktime</string>
+    <string name="export_excel_sheet_month_aggreg_pausetime">Pause</string>
+    <string name="export_excel_sheet_month_aggreg_manual">Manual</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_export">Export</string>
+    <string name="settings_section_export_manual_edit">Mark manuel edited records</string>
+    <string name="settings_section_export_errors">Mark days with errors</string>
+    <string name="settings_section_export_pause">Include pause + total times</string>
+    <string name="settings_section_app">App</string>
+    <string name="settings_section_app_dangerous_edit">Allow potentially dangerous manual edits</string>
+    <string name="settings_section_personal">Personal data</string>
+    <string name="settings_section_personal_add">Add</string>
+    <string name="settings_section_personal_reset">Reset</string>
+    <string name="settings_section_personal_save">Save</string>
+    <string name="settings_section_personal_entry_active">Active:</string>
+    <string name="settings_section_personal_entry_delete">Delete</string>
+    <string name="settings_section_personal_entry_name">Name</string>
+    <string name="settings_section_personal_entry_value">Value</string>
+</resources>
