@@ -56,6 +56,7 @@
     <string name="export_range_until">Bis:</string>
     <string name="export_start">Export starten</string>
     <string name="export_save">Datei speichern</string>
+    <string name="export_save_failed">Der Export wurde nicht gespeichert!</string>
     <string name="export_share">Export teilen</string>
     <string name="export_share_failed">Teilungsvorgang ist fehlgeschlagen…</string>
     <string name="export_finished">Der Exportvorgang war erfolgreich.\nBitte wählen Sie wie die Exportdatei genutzt werden soll.</string>

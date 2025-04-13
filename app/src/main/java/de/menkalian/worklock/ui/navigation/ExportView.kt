@@ -63,14 +63,22 @@ fun ExportView(
     val context = LocalContext.current
     val ioScope = rememberCoroutineScope { Dispatchers.IO }
     val launcher = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-        pickedImageUri = it.data?.data
+        pickedImageUri = it.data?.data ?: Uri.EMPTY // Returns empty when sharing/selecting was cancelled.
     }
 
     LaunchedEffect(lastExportFile, pickedImageUri) {
         if (lastExportFile != null && pickedImageUri != null) {
-            writeFile(context, lastExportFile!!, pickedImageUri!!)
-            lastExportFile = null
-            pickedImageUri = null
+            if (pickedImageUri != Uri.EMPTY) {
+                writeFile(context, lastExportFile!!, pickedImageUri!!)
+                lastExportFile = null
+                pickedImageUri = null
+            } else {
+                Toast.makeText(
+                    context,
+                    R.string.export_save_failed,
+                    Toast.LENGTH_LONG
+                ).show()
+            }
         }
     }
 
@@ -91,7 +99,10 @@ fun ExportView(
                     Spacer(Modifier.height(20.dp))
                     Button(
                         onClick = {
-                            shareFile(context, lastExportFile!!)
+                            shareFile(context, lastExportFile!!) {
+                                // Close Dialog on success.
+                                lastExportFile = null
+                            }
                         }
                     ) {
                         Icon(Icons.Default.Share, stringResource(R.string.export_share))
@@ -289,7 +300,7 @@ private fun writeFile(context: Context, file: File, uri: Uri) {
     }
 }
 
-private fun shareFile(context: Context, file: File) {
+private fun shareFile(context: Context, file: File, onSuccess: () -> Unit) {
     val scope = CoroutineScope(Dispatchers.Main)
     if (VERSION.SDK_INT >= VERSION_CODES.Q) {
         val mimeTypeFromExtension = MimeTypeMap.getSingleton().getMimeTypeFromExtension(file.extension)
@@ -317,6 +328,7 @@ private fun shareFile(context: Context, file: File) {
                 flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
             }
             context.startActivity(Intent.createChooser(shareIntent, null))
+            onSuccess()
         } else {
             scope.launch {
                 Toast.makeText(
@@ -344,6 +356,7 @@ private fun shareFile(context: Context, file: File) {
                         flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
                     }
                     context.startActivity(Intent.createChooser(shareIntent, null))
+                    onSuccess()
                 } else {
                     Toast.makeText(
                         context,

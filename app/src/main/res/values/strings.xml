@@ -59,6 +59,7 @@
     <string name="export_range_until">Last Month:</string>
     <string name="export_start">Start Export</string>
     <string name="export_save">Save as file</string>
+    <string name="export_save_failed">Your export was not saved!</string>
     <string name="export_share">Share Export</string>
     <string name="export_share_failed">Sharing failed…</string>
     <string name="export_finished">The export was successful.\nPlease choose the action for your export.</string>
