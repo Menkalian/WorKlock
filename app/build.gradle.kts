@@ -32,6 +32,9 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
 
             signingConfig = signingConfigs.create("release") {
+                // DON'T PANIC!
+                // This is not the upload keystore and you should not trust anything signed with this key (since it is publicly available)!
+                // If you want to compile the app for yourself, you may use this signing key or a custom one (the latter is preferable).
                 storeFile(rootProject.file("keystore/keystore.jks"))
                 storePassword("DR%dz2LhNg#CCHM8SgrvZ5BY&sySvL")
                 keyAlias("key0")
